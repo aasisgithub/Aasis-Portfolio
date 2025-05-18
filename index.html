@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aasis Shrestha - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/lucide@latest/dist/lucide.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="container">
+            <div class="nav-content">
+                <div class="logo" onclick="handleNavigation('home')">
+                    <span class="logo-name">Aasis</span>
+                    <span class="logo-dot">.</span>
+                </div>
+                
+                <div class="desktop-nav">
+                   <li class="navli"><a href="#home">Home</a></li>
+                    <li class="navli"><a href="#about">About</a></li>
+                    <li class="navli"><a href="#education">Education</a></li>
+                    <li class="navli"><a href="#skills">Skills</a></li>
+                    <li class="navli"><a href="#works">Projects</a></li>
+                    <li class="navli"><a href="#contact">Contact</a></li>
+
+                    
+                    <button id="theme-toggle" class="theme-toggle">
+                        <i data-lucide="moon" class="moon-icon"></i>
+                        <i data-lucide="sun" class="sun-icon"></i>
+                    </button>
+                </div>
+                
+                <div class="mobile-nav">
+                    <button id="theme-toggle-mobile" class="theme-toggle">
+                        <i data-lucide="moon" class="moon-icon"></i>
+                        <i data-lucide="sun" class="sun-icon hidden"></i>
+                    </button>
+                    <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+                        <i data-lucide="menu" class="menu-icon"></i>
+                        <i data-lucide="x" class="close-icon hidden"></i>
+                    </button>
+                </div>
+            </div>
+            
+           <div id="mobile-menu" class="mobile-menu hidden">
+    <ul>
+        <li class="mobnav"><a href="#home">Home</a></li>
+        <li class="mobnav"><a href="#about">About</a></li>
+        <li class="mobnav"><a href="#education">Education</a></li>
+        <li class="mobnav"><a href="#skills">Skills</a></li>
+        <li class="mobnav"><a href="#works">Projects</a></li>
+        <li class="mobnav"><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title" id="type-animation"></h1>
+                <p class="hero-subtitle">Crafting digital experiences with passion and precision</p>
+                <div class="hero-buttons">
+                     <button class="btn-cv" id="download-cv">
+                    Download CV <i data-lucide="download"></i>
+                </button>
+                    <button class="btn-secondary"><a href="#contact">Contact Me</a>
+                   
+                </button>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <div class="glossy-overlay"></div>
+                    <div class="gradient-border">
+                        <img src="images/p1.1.png" alt="Aasis Shrestha" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="floating-image">
+                        <img src="images/p3.jpg" alt="Aasis Shrestha" class="profile-photo">
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    <p class="about-text">
+                        I am a passionate web developer and graphics designer with experience in creating responsive websites and designing captivating visuals. I love tackling new challenges and continuously growing my skill set to deliver outstanding results for my clients.
+                    </p>
+                    
+                    <div class="hobbies-grid">
+                        <div class="hobby-card">
+                            <div class="hobby-icon">
+                                <i data-lucide="code-2"></i>
+                                <h3>Coding</h3>
+                            </div>
+                            <p>Building awesome web applications</p>
+                        </div>
+                        
+                        <div class="hobby-card">
+                            <div class="hobby-icon">
+                                <i data-lucide="music"></i>
+                                <h3>Music</h3>
+                            </div>
+                            <p>Listening Music</p>
+                        </div>
+                        
+                        <div class="hobby-card">
+                            <div class="hobby-icon">
+                                <i data-lucide="gamepad-2"></i>
+                                <h3>Gaming</h3>
+                            </div>
+                            <p>Strategy and RPG games</p>
+                        </div>
+                        
+                        <div class="hobby-card">
+                            <div class="hobby-icon">
+                                <i data-lucide="coffee"></i>
+                                <h3>Coffee</h3>
+                            </div>
+                            <p>Exploring different brews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="education-card">
+                            <div class="education-header">
+                                <i data-lucide="book-open"></i>
+                                <h3>Bachelor of Computer Science(Hons)</h3>
+                            </div>
+                            <p class="institution">IIMS College</p>
+                            <p class="description">Specialization : Data Science</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-dot"></div>
+                    
+                    <div class="timeline-year">2022 - 2026</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="education-card">
+                            <div class="education-header">
+                                <i data-lucide="book-open"></i>
+                                <h3>+2 in Computer Science</h3>
+                            </div>
+                            <p class="institution">Nepalaya Hss College</p>
+                           
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-dot"></div>
+                    
+                    <div class="timeline-year">2020 - 2022</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Skills Section -->
+<section id="skills" class="section skills">
+    <div class="container">
+        <h2 class="section-title">Skills</h2>
+        
+        <div class="skills-grid">
+            <div class="skill-icon">
+                <img src="images/html.png" alt="HTML5" title="HTML5 - Advanced">
+                <span>HTML5</span>
+            </div>
+            
+            <div class="skill-icon">
+                <img src="images/css-icon.jpg" alt="CSS3" title="CSS3 - Advanced">
+                <span>CSS3</span>
+            </div>
+            
+            <div class="skill-icon">
+                <img src="images/js-icon.png" alt="JavaScript" title="JavaScript - Intermediate">
+                <span>JavaScript</span>
+            </div>
+            
+            <div class="skill-icon">
+                <img src="images/react-icon.png" alt="React" title="React - Intermediate">
+                <span>React</span>
+            </div>
+            
+    
+            
+            <div class="skill-icon">
+                <img src="images/figma-icon.png" alt="Figma" title="Figma - Intermediate">
+                <span>Figma</span>
+            </div>
+            
+            <div class="skill-icon">
+                <img src="images/Python.jpg" alt="Python" title="Python - Basic">
+                <span>Python</span>
+            </div>
+            
+            <div class="skill-icon">
+                <img src="images/canva-icon.png" alt="Canva" title="Canva - Advanced">
+                <span>Canva</span>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Works Section -->
+    <section id="works" class="section works">
+        <div class="container">
+            <h2 class="section-title">My Portfolio</h2>
+            
+            <!-- Development Projects -->
+            <div class="works-section">
+                <div class="works-header">
+                    <i data-lucide="code-2"></i>
+                    <h3>Development Projects</h3>
+                </div>
+                
+                <div class="works-grid development-grid">
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="images/dev1.png" alt="Kishani App">
+                            <div class="work-overlay">
+                                <a href="#" class="work-button">
+                                    <i data-lucide="github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="work-content">
+                            <h4>Kishani App</h4>
+                            <p>Agriculture app that helps farmers to sell their agro products.</p>
+                            <div class="work-tags">
+                                <span>React Native</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="images/ui5.png" alt="Clear Thoughts">
+                            <div class="work-overlay">
+                                <a href="https://github.com/aasisgithub/Clear_thoughts" class="work-button" target="_blank" >
+                                    <i data-lucide="github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="work-content">
+                            <h4>Clear Thoughts</h4>
+                            <p>Productivity app with drag-and-drop interface</p>
+                            <div class="work-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="images/spam.jpeg" alt="Clear Thoughts">
+                            <div class="work-overlay">
+                                <a href="https://github.com/aasisgithub/Spam-Email-Classification" class="work-button" target="_blank">
+                                    <i data-lucide="github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="work-content">
+                            <h4>Spam-Email-Classification</h4>
+                            <p>Python-based spam email classifier using logistic regression.</p>
+                            <div class="work-tags">
+                                <span>Python</span>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="images/diabeties.jpeg" alt="Clear Thoughts">
+                            <div class="work-overlay">
+                                <a href="https://github.com/aasisgithub/Diabetes_Prediction" class="work-button" target="_blank">
+                                    <i data-lucide="github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="work-content">
+                            <h4>Diabetes_Prediction</h4>
+                            <p>Predict diabetes risk in R with logistic regression.</p>
+                            <div class="work-tags">
+                                <span>R</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- UI/UX Design -->
+            <div class="works-section">
+                <div class="works-header">
+                    <i data-lucide="figma"></i>
+                    <h3>UI/UX Design</h3>
+                </div>
+                
+                <div class="works-grid ui-grid">
+                    <div class="ui-card">
+                        <img src="images/ui3.png" alt="Krishak App">
+                        <div class="ui-overlay">
+                            <h4>Krishak App</h4>
+                            <p>Designed for farmer for renting machinery equipment and hire workers</p>
+                            <a href="https://www.figma.com/design/ScJ4MaDyJyxa3b7AEszq2k/Kishani--App-Design?node-id=2-2&t=Cd6JJpcQvgtzNaWA-1" class="ui-button">
+                                <i data-lucide="figma"></i> Open in Figma
+                            </a>
+                        </div>
+                        <div class="ui-tags">
+                            <span>Figma</span>
+                            <span>User Research</span>
+                            <span>Prototype</span>
+                        </div>
+                    </div>
+                    
+                    <div class="ui-card">
+                        <img src="images/ui4.png" alt="CollegeDiscover">
+                        <div class="ui-overlay">
+                            <h4>CollegeDiscover</h4>
+                            <p>Website to help the students to find the colleges.</p>
+                            <a href="https://www.figma.com/design/lRYgib9AmH260gxTk5xJ2I/CollegeDiscover?node-id=0-1&t=JsMTIB3cVgqHDnFf-1" class="ui-button">
+                                <i data-lucide="figma"></i> Open in Figma
+                            </a>
+                        </div>
+                        <div class="ui-tags">
+                            <span>Wireframes</span>
+                            <span>UI Kit</span>
+                            <span>Figma</span>
+                        </div>
+                    </div>
+                    
+                    <div class="ui-card">
+                        <img src="images/ui2.png" alt="Mediworld">
+                        <div class="ui-overlay">
+                            <h4>Mediworld</h4>
+                            <p>App for healthcare system.</p>
+                            <a href="https://www.figma.com/design/2QvOvbyNYmiyJKKFsI4uT7/Health-Care?node-id=0-1&t=3yNly9hQZMLPLOgr-1" class="ui-button">
+                                <i data-lucide="figma"></i> Open in Figma
+                            </a>
+                        </div>
+                        <div class="ui-tags">
+                            <span>Wireframes</span>
+                            <span>UI Kit</span>
+                            <span>Figma</span>
+                        </div>
+                    </div>
+                    
+                    <div class="ui-card">
+                        <img src="images/ui5.png" alt="Clear Thought">
+                        <div class="ui-overlay">
+                            <h4>Clear Thought</h4>
+                            <p>Website for mental helath people.</p>
+                            <a href="https://www.figma.com/design/vcYcBkTurYOwRBvbLVkNBS/Mental-Health?node-id=46-161&t=ryekf3RZBgap3Jsq-1" class="ui-button">
+                                <i data-lucide="figma"></i> Open in Figma
+                            </a>
+                        </div>
+                        <div class="ui-tags">
+                            <span>Wireframes</span>
+                            <span>UI Kit</span>
+                            <span>Figma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Graphic Design -->
+            <div class="works-section">
+                <div class="works-header">
+                    <i data-lucide="pen-tool"></i>
+                    <h3>Graphic Design</h3>
+                </div>
+                
+                <div class="works-grid graphic-grid">
+                    <div class="graphic-card">
+                        <img src="images/design7.png" alt="Graphic Design">
+                    </div>
+                    
+                    <div class="graphic-card">
+                        <img src="images/design6.png" alt="Graphic Design">
+                    </div>
+                    
+                    <div class="graphic-card">
+                        <img src="images/design5.png" alt="Graphic Design">
+                    </div>
+                    
+                    <div class="graphic-card">
+                        <img src="images/design8.png" alt="Graphic Design">
+                    </div>
+                    
+                    <div class="graphic-card">
+                        <img src="images/design2.png" alt="Graphic Design">
+                    </div>
+                    <div class="graphic-card">
+                        <img src="images/design4.png" alt="Graphic Design">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="mail"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>aasisshrestha9898@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="phone"></i>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+977 9768429276</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Kathmandu, Nepal</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/aasisgithub" target="_blank" class="social-icon">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/aasis-shrestha-7702a9306/" target="_blank" class="social-icon">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="https://www.facebook.com/aasis.shrestha.98/" target="_blank" class="social-icon">
+                            <i data-lucide="facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        
+                        <div id="form-status"></div>
+                        
+                        <button type="submit" class="submit-button" id="submit-button">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
